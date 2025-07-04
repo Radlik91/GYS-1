@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog | G&S Abogados Asociados</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style-colors.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    .blog-img-wrapper {
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+    .blog-img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR DINÁMICO -->
+  <div id="nav-placeholder"></div>
+
+  <main class="container py-5">
+    <h1 class="text-center mb-5">Nuestro <strong>Blog Jurídico</strong></h1>
+
+    <!-- Artículo 1 -->
+    <article class="mb-5">
+      <div class="blog-img-wrapper">
+        <img src="Imag/cartera-horizontal.jpeg" class="blog-img rounded-3 shadow" alt="Recuperación de cartera en PH">
+      </div>
+      <h2 class="mb-2">La recuperación de cartera en propiedad horizontal: un reto jurídico y cultural en Colombia</h2>
+      <p class="text-muted">Fecha: 18 de Junio 2025<br>Autor: G&S Abogados Asociados</p>
+
+      <p>La recuperación de cartera en propiedad horizontal se ha convertido en uno de los principales desafíos para los administradores y consejos de administración de edificios y conjuntos residenciales en Colombia. Aunque la Ley 675 de 2001 establece claramente la obligatoriedad del pago de expensas comunes por parte de los copropietarios, la morosidad sigue siendo alta en muchas comunidades.</p>
+
+      <h5 class="mt-4">Causas comunes de la cartera vencida:</h5>
+      <ul>
+        <li>Falta de cultura de pago y desconocimiento de las consecuencias legales.</li>
+        <li>Desacuerdos con la administración.</li>
+        <li>Crisis económicas personales o familiares.</li>
+      </ul>
+
+      <h5 class="mt-4">¿Qué establece la Ley?</h5>
+      <p>La Ley 675 permite el cobro ejecutivo de las cuotas de administración, lo que significa que las copropiedades pueden acudir a instancias judiciales para recuperar el dinero adeudado. Sin embargo, este proceso requiere una adecuada asesoría legal y la recopilación rigurosa de pruebas: estados de cuenta, actas de asamblea, reglamentos de propiedad, entre otros.</p>
+
+      <h5 class="mt-4">El papel del abogado en estos procesos</h5>
+      <p>En G&S Abogados Asociados acompañamos a nuestros clientes en todo el proceso de recuperación de cartera, desde las comunicaciones extrajudiciales hasta la ejecución ante juzgados civiles. Además, asesoramos en la implementación de políticas internas para la prevención de la mora, como descuentos por pronto pago, sistemas de alertas y acuerdos de pago.</p>
+
+      <p>Recuperar cartera no solo es una necesidad financiera, sino también una herramienta para mantener la convivencia, el orden y la sostenibilidad de las propiedades horizontales. El apoyo legal oportuno marca la diferencia entre una administración eficaz y una que se ve sobrepasada por la morosidad.</p>
+    </article>
+
+    <hr class="my-5" />
+
+    <!-- Artículo 2 -->
+    <article>
+      <div class="blog-img-wrapper">
+        <img src="Imag/cultura-pago.jpeg" class="blog-img rounded-3 shadow" alt="Cultura de pago">
+      </div>
+      <h2 class="mb-2">Propiedad horizontal en Colombia: ¿crisis de cultura de pago?</h2>
+      <p class="text-muted">Fecha: Junio 2025<br>Autor: G&S Abogados Asociados</p>
+
+      <p>La propiedad horizontal en Colombia representa una forma de organización inmobiliaria que involucra la convivencia y la administración conjunta de bienes comunes. Con más del 30% de los hogares ubicados en este régimen, la importancia de una adecuada gestión administrativa y financiera es evidente.</p>
+
+      <h5 class="mt-4">¿Existe una crisis de cultura de pago?</h5>
+      <p>La morosidad en el pago de las expensas comunes es una realidad preocupante. En muchos casos, los copropietarios omiten sus responsabilidades argumentando desacuerdos con la administración, dificultades económicas o simplemente por falta de conciencia sobre la importancia del cumplimiento.</p>
+
+      <p>Esta situación no solo afecta el flujo de caja de las copropiedades, sino que también impacta negativamente la calidad de vida de todos los residentes, al limitar el mantenimiento de zonas comunes, la seguridad, y otros servicios esenciales.</p>
+
+      <h5 class="mt-4">Factores que inciden en la falta de pago:</h5>
+      <ul>
+        <li>Desconocimiento de las obligaciones legales del copropietario.</li>
+        <li>Falta de medidas preventivas por parte de la administración.</li>
+        <li>Ausencia de sanciones claras o procesos de cobro efectivos.</li>
+      </ul>
+
+      <h5 class="mt-4">¿Cómo fomentar la cultura de pago?</h5>
+      <p>Desde G&S Abogados Asociados proponemos un enfoque integral, que incluye campañas de concientización, estatutos claros, acompañamiento jurídico continuo y mecanismos efectivos de cobro que incluyan medidas extrajudiciales y judiciales, si es necesario.</p>
+
+      <p>Fomentar la cultura de pago no solo es tarea de la administración, sino de toda la comunidad. El cumplimiento de las obligaciones garantiza una convivencia armoniosa, mejora la valorización de los inmuebles y refuerza el sentido de pertenencia.</p>
+    </article>
+
+  </main>
+
+  <!-- FOOTER DINÁMICO -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    fetch('/components/nav.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('nav-placeholder').innerHTML = data);
+
+    fetch('/components/footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+  </script>
+
+</body>
+</html>

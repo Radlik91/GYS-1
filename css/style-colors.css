@@ -1,0 +1,82 @@
+/* ================================
+   PALETA CORPORATIVA G&S ABOGADOS
+================================= */
+:root {
+  --negro: #000000;
+  --blanco: #FFFFFF;
+  --dorado: #C4A300;         /* Dorado profundo recomendado */
+  --dorado-claro: #D4AF37;   /* Dorado metálico clásico */
+  --dorado-satinado: #BFA94D;/* Versión suave y elegante */
+}
+
+/* ================================
+   COLORES GENERALES DE FONDO Y TEXTO
+================================= */
+body {
+  background-color: var(--blanco);
+  color: var(--negro);
+}
+
+/* Enlaces estándar */
+a {
+  color: var(--dorado);
+}
+a:hover {
+  color: var(--dorado-claro);
+  text-decoration: underline;
+}
+
+/* ================================
+   BOTONES PERSONALIZADOS
+================================= */
+
+/* Botón dorado sólido */
+.btn-oro {
+  background-color: var(--dorado);
+  border: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+.btn-oro:hover {
+  background-color: var(--dorado-claro);
+  color: white;
+}
+
+/* Botón contorno dorado */
+.btn-outline-oro {
+  border: 1px solid var(--dorado);
+  color: var(--dorado);
+  background-color: transparent;
+}
+.btn-outline-oro:hover {
+  background-color: var(--dorado);
+  color: var(--blanco);
+}
+
+/* ================================
+   NAVBAR Y FOOTER
+================================= */
+.navbar {
+  background-color: var(--blanco);
+  color: var(--negro);
+}
+
+.navbar .nav-link {
+  color: var(--negro);
+}
+.navbar .nav-link:hover {
+  color: var(--dorado);
+}
+
+footer {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+footer h5, footer a {
+  color: var(--dorado);
+}
+footer a:hover {
+  color: var(--dorado-claro);
+  text-decoration: underline;
+}
+

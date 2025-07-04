@@ -3,213 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>G&S Abogados Asociados</title>
-
-  <!-- Estilos -->
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Bienvenido | G&S Abogados</title>
   <link rel="stylesheet" href="css/preloader.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-  <!-- Íconos -->
-   <!--
-  <link rel="apple-touch-icon" sizes="180x180" href="Iconos/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="Iconos/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="Iconos/favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
-  -->
-  <link rel="apple-touch-icon" sizes="180x180" href="Iconos/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="Iconos/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="Iconos/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="css/style-colors.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Animación de desvanecimiento suave */
+    body.fade-out {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+      body.loaded {
+    opacity: 1;
+  }
+  </style>
 </head>
 <body>
 
-  <!-- Preloader -->
+  <!-- Preloader de entrada -->
   <div id="preloader">
-    <div class="contenedor">
+    <div class="preloader-contenedor">
       <img src="Imag/Logo.jpeg" alt="Logo G&S" />
       <p class="mensaje">
         Abogados Especialistas<br>
         Soluciones Jurídicas en Recuperación de Cartera<br>
         Propiedad Horizontal y Empresarial
       </p>
-      
     </div>
   </div>
 
-  <!-- Contenido principal -->
-  <div id="main-content" class="hidden">
-
-    <!-- NAVBAR DINÁMICO -->
-    <div id="nav-placeholder"></div>
-
-    <!-- HERO CON VIDEO -->
-    <main>
-      <section id="hero" class="position-relative">
-        <video autoplay muted loop id="hero-bg" class="w-100" style="max-height: 500px; object-fit: cover;">
-          <source src="Imag/fondo-dinamico.mp4" type="video/mp4">
-        </video>
-
-        <div class="hero-fallback position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
-
-      <div class="hero-content position-absolute top-50 start-50 translate-middle text-white text-center">
-       <img src="Imag/Logo4.png" class="servicio-img rounded-4 mb-2" alt="Logo">
-  
-       <h2 class="fw-semibold fs-4">Abogados Especialistas en recuperación de cartera</h2>
-  
-      <p class="fs-6">
-       Ofrecemos Soluciones Jurídicas en Recuperación de Cartera<br>
-       en Propiedad Horizontal y Empresarial
-      </p>
-      </div>
-      </section>
-    </main>
-
-
-<section class="container py-5">
-  <h2 class="text-center mb-4">Nuestros <strong>Servicios</strong></h2>
-  <div class="row text-center">
-
-    <div class="col-md-4 mb-4">
-      <img src="Imag/Abog4.jpeg" class="servicio-img rounded-4 mb-2" alt="Servicio 1">
-      <div >
-        <strong>Recuperación de<br> Cartera para Propiedad Horizontal</strong>
-      </div>
-    </div>
-
-    <div class="col-md-4 mb-4">
-      <img src="Imag/Abog5.jpg" class="servicio-img rounded-4 mb-2" alt="Servicio 2">
-      <div >
-        <strong>Recuperación de<br> Cartera para Empresas</strong>
-      </div>
-    </div>
-
-    <div class="col-md-4 mb-4">
-      <img src="Imag/Abog7.jpeg" class="servicio-img rounded-4 mb-2" alt="Servicio 3">
-      <div>
-        <strong>Asesorías en Derecho Civil,<br>Comercial y Propiedad Horizontal</strong>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<section class="container py-5">
-  <div class="row align-items-center">
-    
-    <!-- Slideshow a la izquierda -->
-<div class="col-md-6">
-  <div class="slideshow-container">
-    <div class="slide"><img class="slide-img" src="Imag/Abog1.jpg" alt="Abogado 1"></div>
-    <div class="slide"><img class="slide-img" src="Imag/Abog2.jpg" alt="Abogado 2"></div>
-    <div class="slide"><img class="slide-img" src="Imag/Abog6.jpeg" alt="Abogado 3"></div>
-  </div>
-</div>
-
-    <!-- Texto a la derecha -->
-    <div class="col-md-6 text-center text-md-start">
-      <h3 class="fw-semibold">Soluciones Jurídicas Efectivas</h3>
-      <p>Somos expertos en la recuperación de cartera y asesoría legal integral para propiedad horizontal y empresas. Nuestro equipo está listo para proteger tus intereses con compromiso y experiencia.</p>
-    </div>
-
-  </div>
-</section>
-
-<section class="container py-5 oferta-valor">
-  <h2 class="text-center mb-5">Oferta de Valor de <strong>G&S Abogados Asociados</strong></h2>
-  
-  <div class="row align-items-center">
-    <!-- Imagen a la izquierda -->
-    <div class="col-md-5 mb-4 mb-md-0 text-center">
-      <img src="Imag/Abog8.png" alt="Imagen Oferta de Valor" class="img-fluid rounded-4 shadow" style="max-width: 60%;">
-    </div>
-
-    <!-- Texto a la derecha -->
-    <div class="col-md-7">
-      <p >
-        Más que abogados somos sus aliados estratégicos.</strong> Nuestra amplia experiencia en Recuperación de Cartera se combina con una atención personalizada para atender sus necesidades y ofrecer soluciones efectivas.
-        Con G&S Abogados Asociados, recibirá un servicio legal excepcional con estrategias que permiten proteger sus intereses y alcanzar sus objetivos.
-        G&S Abogados Asociados fundamenta su razón de ser en una atención ágil, veraz y oportuna a sus clientes, brindándoles seguridad y confianza en las actuaciones legales que desarrolla.
-        Nuestro equipo de abogados y profesionales cuenta con una amplia experiencia y conocimiento interdisciplinario en diversas áreas del derecho.
-      </p>
-    </div>
-  </div>
-</section>
-
-
-
-
-    <!-- MAPA DE UBICACIÓN -->
-    <section class="container py-5">
-      <h2 class="text-center mb-4">Ubicación</h2>
-      <div class="ratio ratio-16x9">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.2363299745349!2d-74.07308153039988!3d4.603814336488664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99b4bfc77a15%3A0xc1f81e5dc4c441f9!2sGYS%20Abogados%20Asociados%20SAS!5e0!3m2!1ses-419!2sco!4v1751319862549!5m2!1ses-419!2sco"
-      style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-         </div>
-    </section>
-
- <section class="container py-5">
-    <div class="row text-center g-4">
-
-    <div class="col-md-4">
-      <h6><i class="bi bi-envelope"></i> Correos Electrónicos</h6>
-      <p>gysabogadosgerencia@gmail.com<br>gysabogadosyasociadosgys@gmail.com</p>
-    </div>
-
-    <div class="col-md-4">
-      <h6><i class="bi bi-telephone"></i> Teléfonos de Contacto</h6>
-      <p>+57 318 434 2736<br>+57 314 482 3576<br>+57 305 706 3061</p>
-    </div>
-
-    <div class="col-md-4">
-      <h6><i class="bi bi-geo-alt"></i> Oficina Principal</h6>
-      <p>Carrera 7 No. 17-01 Of. 805<br>Edificio Colseguros - Bogotá</p>
-    </div>
-
-    <div class="col-12 pt-4">
-      <h6><i class="bi bi-clock"></i> Horarios de Atención</h6>
-      <p>
-        <strong>Lunes a Viernes:</strong> 8:00 am – 5:30 pm<br>
-        <strong>Sábados:</strong> 9:00 am – 12:00 m
-      </p>
-    </div>
-
-  </div>
-</section>
-
-    <!-- FOOTER DINÁMICO -->
-  <div id="footer-placeholder"></div>
-  </div>
-
-  <!-- JS -->
-  <script src="js/preloader.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Incluir nav y footer -->
   <script>
-    fetch('/components/nav.html')
-      .then(res => res.text())
-      .then(data => document.getElementById('nav-placeholder').innerHTML = data);
-
-    fetch('/components/footer.html')
-      .then(res => res.text())
-      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    // Animación suave antes de cambiar a inicio.html
+    setTimeout(() => {
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        window.location.href = "inicio.html";
+      }, 1000); // Espera a que termine la transición
+    }, 4000); // Tiempo visible del preloader (ajustable)
   </script>
-  <script>
-  let slideIndex = 0;
-  const showSlides = () => {
-    const slides = document.querySelectorAll(".slideshow-container .slide");
-    slides.forEach(slide => slide.style.display = "none");
-    slideIndex = (slideIndex + 1) % slides.length;
-    slides[slideIndex].style.display = "block";
-  };
-  showSlides();
-  setInterval(showSlides, 3000); // cambia cada 3 segundos
+<script>
+  window.addEventListener("load", () => {
+    document.body.classList.add("loaded");
+  });
 </script>
 </body>
 </html>

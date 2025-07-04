@@ -1,4 +1,6 @@
-/* Contenedor general del preloader */
+/* ======================
+   PRELOADER PRINCIPAL
+====================== */
 #preloader {
   position: fixed;
   top: 0;
@@ -13,14 +15,15 @@
   transition: opacity 1.5s ease;
 }
 
-/* Efecto de desvanecimiento */
 #preloader.fade-out {
   opacity: 0;
   pointer-events: none;
 }
 
-/* Contenedor del logo y mensaje */
-.contenedor {
+/* ======================
+   CONTENIDO DEL PRELOADER
+====================== */
+.preloader-contenedor {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -28,14 +31,14 @@
   justify-content: center;
 }
 
-/* Estilo del logo */
+/* Logo */
 #preloader img {
-  width: 280px;           /* Puedes subir a 300px si quieres más grande */
+  width: 280px;
   max-width: 80vw;
-  animation: fadeIn 2s ease-in-out;
+  animation: preloaderFadeIn 2s ease-in-out;
 }
 
-/* Estilo del mensaje legal */
+/* Texto */
 .mensaje {
   font-size: 1.2rem;
   color: #2c3e50;
@@ -46,19 +49,20 @@
   animation-delay: 1s;
 }
 
-/* Animación de entrada del logo */
-@keyframes fadeIn {
+/* ======================
+   ANIMACIONES
+====================== */
+@keyframes preloaderFadeIn {
   0% { opacity: 0; transform: scale(0.8); }
   100% { opacity: 1; transform: scale(1); }
 }
 
-/* Animación de entrada del texto */
 @keyframes textFadeIn {
   0% { opacity: 0; transform: translateY(10px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
-/* Ocultar contenido principal hasta que se cargue todo */
+/* Ocultar contenido mientras carga */
 .hidden {
   display: none;
 }
