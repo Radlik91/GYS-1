@@ -98,17 +98,24 @@ body {
 .slideshow-container {
   position: relative;
   width: 100%;
-  max-height: 320px; /* ligeramente más compacto */
+  height: 350px; /* Altura fija para que las imágenes no salten */
   overflow: hidden;
   border-radius: 10px;
 }
 
 .slide {
+  position: absolute;
   width: 100%;
   height: 100%;
+  opacity: 0;
   object-fit: cover;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 2s ease-in-out;
 
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
 }
 
 .slide img {
